@@ -1,4 +1,6 @@
 services:
-  - type: docker
-    name: mysql
-    env: web
+  # A Docker web service
+  - type: web
+    name: webdis
+    runtime: docker
+    

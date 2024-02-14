@@ -6,13 +6,9 @@ services:
     container_name: render-mysql
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: db_render
-      MYSQL_USER: root123
-      MYSQL_PASSWORD: root123
+      MYSQL_DATABASE: render
     ports:
       - 3306:3306
-    networks:
-      - mynetwork
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin:latest
